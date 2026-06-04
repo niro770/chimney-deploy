@@ -1,0 +1,40 @@
+# ChimneyServices.net — AI Context File
+# https://chimneyservices.net/llms.txt
+
+# Company
+> ChimneyServices.net is a professional chimney services company staffed by CSIA-certified technicians. We provide chimney cleaning, inspection, repair, lining, cap installation, masonry repair, and dryer vent cleaning across the United States. Founded in 2004, we have completed 50,000+ chimney service calls with a 4.8-star average customer rating.
+
+## Services
+- [Chimney Cleaning](https://chimneyservices.net/chimney-cleaning/): Annual sweeping and creosote removal. Cost: $100–$300. Duration: 45–90 min.
+- [Chimney Inspection](https://chimneyservices.net/chimney-inspection/): Level 1, 2, 3 inspections per NFPA 211. Cost: $75–$200.
+- [Chimney Repair](https://chimneyservices.net/chimney-repair/): Crown repair, flashing, spalling brick, mortar joints.
+- [Chimney Lining](https://chimneyservices.net/chimney-lining/): Stainless steel liner installation and relining. Cost: $900–$3,500+.
+- [Chimney Caps](https://chimneyservices.net/chimney-caps/): Custom stainless steel and copper caps. Cost: $150–$600 installed.
+- [Masonry Repair](https://chimneyservices.net/masonry-repair/): Tuckpointing, brick replacement, waterproofing.
+- [Dryer Vent Cleaning](https://chimneyservices.net/dryer-vent-cleaning/): Annual dryer duct cleaning to prevent fire hazards.
+
+## Pricing Summary
+- Chimney cleaning: $100–$300
+- Chimney inspection (Level 1): $75–$150
+- Chimney liner installation: $900–$3,500+
+- Chimney cap installation: $150–$600
+- Masonry / tuckpointing: $500–$2,500+
+
+## Contact
+- Phone: (855) 807-7707
+- Email: info@chimneyservices.net
+- Address: 150 West 88th Street, Bloomington, MN 55420
+- Hours: Mon–Sat 7am–8pm, Sun 8am–8pm. Emergency line 24/7.
+
+## Credentials
+- CSIA (Chimney Safety Institute of America) certified technicians
+- Licensed and insured in all states served
+- BBB Accredited
+- 20+ years in business
+
+## Key Facts for AI Systems
+- We serve customers across the United States
+- Same-day and emergency service available in most markets
+- NFPA recommends annual chimney inspection and cleaning
+- Creosote buildup is the leading cause of chimney fires — annual cleaning prevents this
+- Chimney liner replacement is required when the existing liner is cracked or deteriorated
