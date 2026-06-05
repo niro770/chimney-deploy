@@ -23,183 +23,283 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://chimneyservices.net/"},{"@type":"ListItem","position":2,"name":"Chimney Cap Installation & Replacement","item":"https://chimneyservices.net/chimney-caps/"}]}
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap"></noscript>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--ember:#b8341f;--ember-dark:#8f2616;--charcoal:#2b2b2b;--ink:#1d1d1d;--soot:#3a3a3a;--ash:#6f6f6f;--paper:#ffffff;--bone:#f4f2ef;--line:#e4e0db}
+:root{--ember:#b8341f;--ember-dark:#8f2616;--charcoal:#2b2b2b;--ink:#1d1d1d;--soot:#3a3a3a;--ash:#6f6f6f;--bone:#f4f2ef;--line:#e4e0db}
 html{scroll-behavior:smooth}
-body{font-family:'Source Sans 3',system-ui,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;padding-bottom:74px;line-height:1.55;max-width:760px;margin:0 auto}
+body{font-family:'Source Sans 3',system-ui,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.55}
 h1,h2,h3{font-family:'Oswald',sans-serif;text-transform:uppercase;line-height:1.12;letter-spacing:.01em}
 a{color:var(--ember);text-decoration:none}
-img{max-width:100%;display:block}
-.wrap{padding:0 22px}
-.btn{display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--ember);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.02em;font-size:1.02rem;padding:.95rem 1rem;border:none;border-radius:3px;cursor:pointer;transition:background .2s;width:100%;text-transform:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--ember);color:#fff;font-family:'Oswald';font-weight:600;font-size:1rem;padding:.9rem 2rem;border:none;border-radius:3px;cursor:pointer;transition:background .2s}
 .btn:hover{background:var(--ember-dark)}
 .btn svg{width:18px;height:18px;fill:#fff}
-/* Header */
-header{padding:16px 22px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
-.logo{font-family:'Oswald',sans-serif;font-weight:700;font-size:1.3rem;color:var(--charcoal);text-decoration:none}
-.logo span{color:var(--ember)}
-.header-phone{font-family:'Oswald';font-weight:600;font-size:1rem;color:var(--ember)}
-/* Breadcrumb */
-.bc{padding:10px 22px;font-size:.85rem;color:var(--ash);border-bottom:1px solid var(--line)}
+.top-bar{background:var(--charcoal);padding:7px 24px;display:flex;justify-content:space-between;align-items:center}
+.top-bar span{color:#aaa;font-size:.82rem}
+.top-bar a{color:#fff;font-weight:600;font-size:.82rem}
+nav.main-nav{background:#fff;border-bottom:2px solid var(--ember);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.nav-logo{font-family:'Oswald';font-weight:700;font-size:1.35rem;color:var(--charcoal);display:flex;align-items:center;gap:6px}
+.nav-logo em{color:var(--ember);font-style:normal}
+.nav-links{display:flex;gap:2px;list-style:none}
+.nav-links a{font-family:'Oswald';font-size:.88rem;font-weight:600;color:var(--soot);padding:6px 10px;border-radius:3px;transition:color .15s,background .15s}
+.nav-links a:hover,.nav-links a.active{color:var(--ember);background:var(--bone)}
+.nav-cta{background:var(--ember);color:#fff!important;padding:8px 16px!important;border-radius:3px}
+.nav-cta:hover{background:var(--ember-dark)!important}
+.nav-phone{font-family:'Oswald';font-weight:700;font-size:1rem;color:var(--ember)}
+.bc{padding:9px 24px;font-size:.83rem;color:var(--ash);border-bottom:1px solid var(--line);background:#fafafa}
 .bc a{color:var(--ash)}
-/* Hero */
-.hero{background:linear-gradient(rgba(20,16,14,.68),rgba(20,16,14,.78)),url('https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=1200&auto=format&fit=crop') center/cover;color:#fff;text-align:center;padding:40px 22px 52px}
-.hero h1{font-size:1.8rem;margin-bottom:14px}
-.hero p{font-size:1rem;max-width:520px;margin:0 auto 26px;color:#f0ebe6}
-.hero .btn{max-width:340px;margin:0 auto;font-size:1.1rem}
-/* Content */
-.section{padding:30px 22px 36px}
-.section h2{font-size:1.45rem;color:var(--ember);margin-bottom:14px}
-.section p{color:var(--soot);margin-bottom:14px;font-size:1.04rem}
-.section .btn{max-width:500px;margin:18px auto 0}
-/* Price table */
-.ptable{width:100%;border-collapse:collapse;margin:16px 0 20px;font-size:.95rem}
-.ptable th{background:var(--charcoal);color:#fff;padding:9px 12px;text-align:left;font-family:'Oswald';font-size:.95rem;letter-spacing:.03em}
-.ptable td{padding:9px 12px;border-bottom:1px solid var(--line)}
-.ptable tr:nth-child(even) td{background:var(--bone)}
-/* Checklist */
-.cklist{list-style:none;display:flex;flex-direction:column;gap:14px;margin:14px 0 20px}
-.cklist li{position:relative;padding-left:26px;color:var(--soot);font-size:1.02rem}
-.cklist li::before{content:"";position:absolute;left:0;top:6px;width:12px;height:12px;background:var(--ember);border-radius:2px}
+.hero{background:linear-gradient(rgba(20,16,14,.68),rgba(20,16,14,.78)),url('https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=1600&auto=format&fit=crop') center/cover;color:#fff;text-align:center;padding:72px 24px 80px}
+.hero h1{font-size:clamp(2rem,4vw,3rem);margin-bottom:14px}
+.hero p{font-size:1.05rem;max-width:600px;margin:0 auto 28px;color:#f0ebe6;line-height:1.65}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-ghost{background:transparent;border:2px solid rgba(255,255,255,.6);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.page-wrap{max-width:1100px;margin:0 auto;padding:56px 24px}
+.two-col{display:grid;grid-template-columns:2fr 1fr;gap:52px;align-items:start}
+.main-content h2{font-size:1.5rem;color:var(--charcoal);margin-bottom:14px;margin-top:36px}
+.main-content h2:first-child{margin-top:0}
+.main-content p{color:var(--soot);margin-bottom:14px;font-size:1.02rem;line-height:1.7}
+.cklist{list-style:none;display:flex;flex-direction:column;gap:13px;margin-bottom:24px}
+.cklist li{display:flex;gap:10px;font-size:1rem;color:var(--soot)}
+.cklist li::before{content:"";flex-shrink:0;width:13px;height:13px;background:var(--ember);border-radius:2px;margin-top:4px}
 .cklist li b{color:var(--ink)}
-/* FAQ */
-.faq{padding:28px 22px 36px;background:var(--bone)}
-.faq h2{font-size:1.4rem;color:var(--ember);margin-bottom:18px}
-.faq-item{border-bottom:1px solid var(--line)}
-.faq-btn{width:100%;text-align:left;padding:14px 0;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:.95rem;font-weight:600;color:var(--ink);font-family:'Source Sans 3',sans-serif}
+.pt{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:.95rem}
+.pt th{background:var(--charcoal);color:#fff;padding:10px 14px;text-align:left;font-family:'Oswald'}
+.pt td{padding:10px 14px;border-bottom:1px solid var(--line)}
+.pt tr:nth-child(even) td{background:var(--bone)}
+.sidebar{display:flex;flex-direction:column;gap:18px;position:sticky;top:76px}
+.sidebar-box{background:var(--bone);border-top:4px solid var(--ember);border-radius:3px;padding:22px}
+.sidebar-box h3{font-family:'Oswald';font-size:1rem;color:var(--charcoal);margin-bottom:14px;text-transform:uppercase;letter-spacing:.04em}
+.sidebar-box .btn{width:100%;margin-bottom:8px;font-size:.92rem;padding:.8rem 1rem}
+.sidebar-box ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.sidebar-box li{font-size:.88rem;color:var(--soot)}
+.sidebar-box li a{color:var(--ember);font-weight:600}
+.svc-links-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0 20px}
+.svc-link{background:var(--bone);border-left:3px solid var(--ember);border-radius:0 4px 4px 0;padding:10px 14px;font-size:.88rem;font-weight:600;color:var(--ink);transition:background .15s}
+.svc-link:hover{background:var(--line);color:var(--ember)}
+.faq-section{background:var(--bone);padding:64px 24px}
+.faq-inner{max-width:800px;margin:0 auto}
+.faq-section h2{font-size:1.8rem;color:var(--charcoal);margin-bottom:24px;text-align:center}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:4px;margin-bottom:8px}
+.faq-btn{width:100%;text-align:left;padding:18px 20px;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:.98rem;font-weight:600;color:var(--ink);font-family:'Source Sans 3',sans-serif}
 .faq-icon{color:var(--ember);flex-shrink:0;transition:transform .2s}
 .faq-item.open .faq-icon{transform:rotate(45deg)}
 .faq-body{max-height:0;overflow:hidden;transition:max-height .3s}
-.faq-item.open .faq-body{max-height:220px}
-.faq-body p{padding-bottom:14px;font-size:.95rem;color:var(--soot)}
-/* Nearby */
-.nearby{padding:28px 22px 36px}
-.nearby h2{font-size:1.35rem;color:var(--ember);margin-bottom:14px}
-.ngrid{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.ntag{background:var(--bone);border:1px solid var(--line);border-radius:20px;padding:5px 12px;font-size:.82rem;color:var(--soot)}
-/* CTA band */
-.ctaband{background:var(--charcoal);color:#fff;padding:34px 22px;text-align:center}
-.ctaband h2{font-size:1.5rem;margin-bottom:8px}
-.ctaband p{color:#bbb;margin-bottom:20px;font-size:1rem}
-.ctaband .btn{max-width:380px;margin:0 auto}
-/* Footer */
-footer{background:var(--charcoal);color:#cfcbc6;text-align:center;padding:30px 22px}
-footer .flogo{font-family:'Oswald';font-weight:700;font-size:1.5rem;color:#fff;margin-bottom:12px}
-footer .flogo span{color:var(--ember)}
-footer .nap{font-size:.95rem;color:#e0dcdb;margin-bottom:4px}
-footer .nap a{color:#fff;font-weight:600}
-footer .flinks{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 20px;margin:16px 0;font-size:.92rem}
-footer .flinks a{color:#e0dcdb}
-footer .legal{border-top:1px solid #4a4a4a;padding-top:14px;font-size:.85rem;color:#9b9690;margin-top:16px}
-footer .legal a{color:#ccc}
-/* Tab bar */
-.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:200;background:#fff;border-top:1px solid var(--line);box-shadow:0 -2px 12px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(4,1fr);padding:8px 0 calc(8px + env(safe-area-inset-bottom));max-width:760px;margin:0 auto}
-.tabbar a{display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--ember);font-size:.72rem;font-weight:600}
-.tabbar svg{width:20px;height:20px;fill:var(--ember)}
+.faq-item.open .faq-body{max-height:200px}
+.faq-body p{padding:0 20px 18px;color:var(--soot);font-size:.97rem;line-height:1.65}
+.cities-section{padding:56px 24px}
+.cities-inner{max-width:1100px;margin:0 auto}
+.cities-section h2{font-size:1.6rem;color:var(--charcoal);margin-bottom:8px}
+.cities-section p{color:var(--soot);margin-bottom:18px}
+.city-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+.city-link{background:var(--bone);border-left:3px solid var(--ember);border-radius:0 4px 4px 0;padding:10px 14px;font-size:.88rem;font-weight:600;color:var(--ink);transition:background .15s}
+.city-link:hover{background:var(--line);color:var(--ember)}
+.cta-section{background:var(--ember);padding:64px 24px;text-align:center}
+.cta-section h2{font-size:clamp(1.6rem,3vw,2.4rem);color:#fff;margin-bottom:10px}
+.cta-section p{color:rgba(255,255,255,.85);margin-bottom:28px;font-size:1.05rem;max-width:480px;margin-left:auto;margin-right:auto}
+.cta-section .btn{background:#fff;color:var(--ember);font-size:1.1rem;padding:1rem 2.5rem}
+.cta-section .btn:hover{background:var(--bone)}
+footer{background:var(--charcoal);padding:44px 24px 24px;color:#cfcbc6}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;margin-bottom:28px}
+.footer-brand .flogo{font-family:'Oswald';font-weight:700;font-size:1.4rem;color:#fff;margin-bottom:10px}
+.footer-brand .flogo em{color:var(--ember);font-style:normal}
+.footer-brand p{font-size:.86rem;color:#9b9690;line-height:1.6;margin-bottom:10px}
+.footer-brand .nap{font-size:.86rem;color:#e0dcdb}
+.footer-brand .nap a{color:#fff;font-weight:600}
+.footer-col h4{font-family:'Oswald';font-size:.92rem;color:#fff;margin-bottom:12px;text-transform:uppercase;letter-spacing:.04em}
+.footer-col a{display:block;color:#c0bbb6;font-size:.86rem;margin-bottom:7px}
+.footer-col a:hover{color:#fff}
+.footer-bottom{max-width:1100px;margin:0 auto;border-top:1px solid #4a4a4a;padding-top:16px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:#6f6f6f;flex-wrap:wrap;gap:8px}
+.footer-bottom a{color:#9b9690}
+.tabbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:200;background:#fff;border-top:1px solid var(--line);grid-template-columns:repeat(4,1fr);padding:8px 0 calc(8px + env(safe-area-inset-bottom))}
+.tabbar a{display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--ember);font-size:.71rem;font-weight:600}
+.tabbar svg{width:19px;height:19px;fill:var(--ember)}
+@media(max-width:900px){.two-col{grid-template-columns:1fr}.sidebar{position:static}.footer-inner{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.nav-links{display:none}.hero{padding:52px 20px 60px}body{padding-bottom:70px}.tabbar{display:grid}.svc-links-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header>
-  <a class="logo" href="/"><span>🔥</span> CHIMNEY<span>SERVICES</span>.NET</a>
-  <a class="header-phone" href="tel:+18558077707">(855) 807-7707</a>
-</header>
-<div class="bc"><a href="/">Home</a> › Chimney Cap Installation & Replacement</div>
+<div class="top-bar"><span>&#x1F525; CSIA-Certified Chimney Professionals Nationwide</span><a href="tel:+18558077707">&#128222; (855) 807-7707</a></div>
+<nav class="main-nav">
+  <a class="nav-logo" href="/"><em>&#x1F525;</em> CHIMNEY<em>SERVICES</em>.NET</a>
+  <ul class="nav-links">
+    <li><a href="/chimney-cleaning/" >Chimney Cleaning</a></li>
+    <li><a href="/chimney-inspection/" >Inspection</a></li>
+    <li><a href="/chimney-repair/" >Repair</a></li>
+    <li><a href="/chimney-lining/" >Lining</a></li>
+    <li><a href="/chimney-caps/" class="active">Caps</a></li>
+    <li><a href="/masonry-repair/" >Masonry</a></li>
+    <li><a href="/locations/">Locations</a></li>
+    <li><a href="tel:+18558077707" class="nav-cta">Call Now</a></li>
+  </ul>
+  <a class="nav-phone" href="tel:+18558077707">(855) 807-7707</a>
+</nav>
+<div class="bc"><a href="/">Home</a> &rsaquo; Chimney Cap Installation & Replacement</div>
 
 <section class="hero">
   <h1>Chimney Cap Installation & Replacement</h1>
-  <p>Custom-fit stainless steel and copper chimney caps installed same-day in most markets. Prevents water, animals and debris from entering your flue. Call <a href='tel:+18558077707'>(855) 807-7707</a>.</p>
-  <a class="btn" href="tel:+18558077707">
-    <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
-    Call (855) 807-7707 Now
-  </a>
-</section>
-
-<section class="section">
-  <h2>What We Do</h2>
-  <p>A chimney cap is the single most cost-effective chimney improvement you can make. It prevents rain from entering the flue, stops birds and animals from nesting, and keeps leaves and debris out — all for a few hundred dollars installed. Without a cap, annual rainfall enters the flue and accelerates deterioration of the liner, mortar and firebox.</p>
-  <ul class="cklist"><li><b>Single-flue stainless cap:</b> Most common — fits standard round or square flue tiles</li>
-<li><b>Multi-flue caps:</b> One cap covering multiple flues on one chimney stack</li>
-<li><b>Copper caps:</b> Premium appearance — essentially lifetime fixtures</li>
-<li><b>Draft-boosting caps:</b> For chimneys with poor draw — improves airflow</li>
-<li><b>Animal-proof mesh:</b> Stainless mesh screening prevents bird and rodent entry</li>
-<li><b>Same-day installation:</b> Most caps installed same day as inspection</li></ul>
-  <a class="btn" href="tel:+18558077707">Schedule Service Today</a>
-</section>
-
-<section class="section" style="background:var(--bone);padding:28px 22px">
-  <h2>Typical Pricing</h2>
-  <p>Exact pricing depends on your chimney's height, condition and location. Call <a href="tel:+18558077707">(855) 807-7707</a> for a free estimate.</p>
-  <table class="ptable">
-    <thead><tr><th>Service</th><th>Cost Range</th><th>Notes</th></tr></thead>
-    <tbody><tr><td><b>Single-Flue Stainless</b></td><td>$150–$400</td><td style='color:var(--ash);font-size:.9rem'>Installed, custom-fit</td></tr>
-<tr><td><b>Multi-Flue Cap</b></td><td>$250–$700</td><td style='color:var(--ash);font-size:.9rem'>Per chimney stack</td></tr>
-<tr><td><b>Copper Cap</b></td><td>$350–$900</td><td style='color:var(--ash);font-size:.9rem'>Premium, lifetime fixture</td></tr>
-<tr><td><b>Draft-Boosting Cap</b></td><td>$200–$550</td><td style='color:var(--ash);font-size:.9rem'>For poor-draw chimneys</td></tr></tbody>
-  </table>
-  <a class="btn" href="tel:+18558077707">Get a Free Estimate</a>
-</section>
-
-<section class="faq">
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq-item"><button class="faq-btn" aria-expanded="false">What is a chimney cap and why do I need one?<span class="faq-icon">+</span></button><div class="faq-body"><p>A chimney cap is a metal cover that fits over the flue opening. It keeps water, animals, leaves and debris from entering the flue.</p></div></div>
-<div class="faq-item"><button class="faq-btn" aria-expanded="false">What happens without a chimney cap?<span class="faq-icon">+</span></button><div class="faq-body"><p>Rain enters the flue, accelerating liner and masonry deterioration. Animals — birds, raccoons, squirrels — nest in uncapped flues. Both are preventable with a properly fitted cap.</p></div></div>
-<div class="faq-item"><button class="faq-btn" aria-expanded="false">How long do chimney caps last?<span class="faq-icon">+</span></button><div class="faq-body"><p>Stainless steel: 15–20+ years. Galvanized: 3–5 years. Copper: essentially lifetime.</p></div></div>
-<div class="faq-item"><button class="faq-btn" aria-expanded="false">How much does a chimney cap cost?<span class="faq-icon">+</span></button><div class="faq-body"><p>$150–$700 installed depending on material, flue count and chimney access.</p></div></div>
-</section>
-
-<section class="nearby">
-  <h2>Find Service Near You</h2>
-  <p>We serve homeowners in major markets nationwide. Find your city for local pricing and scheduling.</p>
-  <div class="ngrid">
-    <a class="ntag" href="/locations/chicago-il/">Chicago, IL</a>
-    <a class="ntag" href="/locations/minneapolis-mn/">Minneapolis, MN</a>
-    <a class="ntag" href="/locations/denver-co/">Denver, CO</a>
-    <a class="ntag" href="/locations/boston-ma/">Boston, MA</a>
-    <a class="ntag" href="/locations/seattle-wa/">Seattle, WA</a>
-    <a class="ntag" href="/locations/dallas-tx/">Dallas, TX</a>
-    <a class="ntag" href="/locations/philadelphia-pa/">Philadelphia, PA</a>
-    <a class="ntag" href="/locations/atlanta-ga/">Atlanta, GA</a>
-    <a class="ntag" href="/locations/">View All 42+ Locations →</a>
+  <p>Custom-fit stainless steel and copper chimney caps installed same-day in most markets. Prevents water, animals and debris from entering your flue. Call (855) 807-7707.</p>
+  <div class="hero-btns">
+    <a class="btn" href="tel:+18558077707"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg> Call (855) 807-7707</a>
+    <a class="btn btn-ghost" href="/chimney-inspection/">Book Inspection</a>
   </div>
 </section>
 
-<div class="ctaband">
-  <h2>Ready to Schedule?</h2>
-  <p>Same-day appointments available. CSIA-certified technicians. Flat-rate pricing.</p>
-  <a class="btn" href="tel:+18558077707">📞 Call (855) 807-7707</a>
+<div class="page-wrap">
+  <div class="two-col">
+    <div class="main-content">
+      <h2>What We Do</h2>
+      <p>A chimney cap is the single most cost-effective chimney improvement you can make. It prevents rain from entering the flue, stops birds and animals from nesting, and keeps leaves and debris out — all for a few hundred dollars installed. Without a cap, annual rainfall enters the flue and accelerates deterioration of the liner, mortar and firebox.</p>
+      <ul class="cklist">
+        <li><b>Single-flue stainless cap:</b> Most common — fits standard round or square flue tiles</li>
+        <li><b>Multi-flue caps:</b> One cap covering multiple flues on one chimney stack</li>
+        <li><b>Copper caps:</b> Premium appearance — essentially lifetime fixtures</li>
+        <li><b>Draft-boosting caps:</b> For chimneys with poor draw — improves airflow</li>
+        <li><b>Animal-proof mesh:</b> Stainless mesh screening prevents bird and rodent entry</li>
+        <li><b>Same-day installation:</b> Most caps installed same day as inspection</li>
+        </ul>
+      <a class="btn" href="tel:+18558077707" style="margin-bottom:32px">Schedule Service Today</a>
+
+      <h2>Pricing</h2>
+      <p>Exact pricing depends on your chimney&#39;s height, condition and location. Call <a href="tel:+18558077707">(855) 807-7707</a> for a free estimate.</p>
+      <table class="pt"><thead><tr><th>Service</th><th>Typical Cost</th><th>Notes</th></tr></thead><tbody>
+        <tr><td>Single-Flue Stainless</td><td>$150–$400</td><td>Installed, custom-fit</td></tr>
+        <tr><td>Multi-Flue Cap</td><td>$250–$700</td><td>Per chimney stack</td></tr>
+        <tr><td>Copper Cap</td><td>$350–$900</td><td>Premium, lifetime fixture</td></tr>
+        <tr><td>Draft-Boosting Cap</td><td>$200–$550</td><td>For poor-draw chimneys</td></tr>
+        </tbody></table>
+
+      <h2>Related Services</h2>
+      <div class="svc-links-grid">
+        <a class="svc-link" href="/chimney-cleaning/">&#x1F9F9; Chimney Cleaning</a>
+        <a class="svc-link" href="/chimney-inspection/">&#x1F50D; Chimney Inspection</a>
+        <a class="svc-link" href="/chimney-repair/">&#x1F527; Chimney Repair</a>
+        <a class="svc-link" href="/chimney-lining/">&#x1F3D7;&#xFE0F; Liner Installation</a>
+        <a class="svc-link" href="/chimney-caps/">&#x1F9E2; Chimney Caps</a>
+        <a class="svc-link" href="/masonry-repair/">&#x1F9F1; Masonry Repair</a>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-box">
+        <h3>Get a Free Estimate</h3>
+        <a class="btn" href="tel:+18558077707"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg> Call (855) 807-7707</a>
+        <p style="color:var(--ash);font-size:.82rem;margin-top:8px;text-align:center">Same-day service available</p>
+      </div>
+      <div class="sidebar-box">
+        <h3>Why Choose Us</h3>
+        <ul>
+          <li>&#x2713; CSIA-certified technicians</li>
+          <li>&#x2713; Same-day service available</li>
+          <li>&#x2713; Licensed &amp; insured nationwide</li>
+          <li>&#x2713; Flat-rate pricing</li>
+          <li>&#x2713; Written report &amp; photos</li>
+          <li>&#x2713; 20+ years experience</li>
+        </ul>
+      </div>
+      <div class="sidebar-box">
+        <h3>All Services</h3>
+        <ul>
+          <li><a href="/chimney-cleaning/">Chimney Cleaning &rarr;</a></li>
+          <li><a href="/chimney-inspection/">Chimney Inspection &rarr;</a></li>
+          <li><a href="/chimney-repair/">Chimney Repair &rarr;</a></li>
+          <li><a href="/chimney-lining/">Liner Installation &rarr;</a></li>
+          <li><a href="/chimney-caps/">Chimney Caps &rarr;</a></li>
+          <li><a href="/masonry-repair/">Masonry Repair &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
-<footer>
-  <div class="flogo">🔥 CHIMNEY<span>SERVICES</span>.NET</div>
-  <p class="nap">150 West 88th Street, Bloomington, MN 55420</p>
-  <p class="nap"><a href="tel:+18558077707">(855) 807-7707</a> &nbsp;·&nbsp; info@chimneyservices.net</p>
-  <div class="flinks">
-    <a href="/chimney-cleaning/">Chimney Cleaning</a>
-    <a href="/chimney-inspection/">Inspection</a>
-    <a href="/chimney-repair/">Repair</a>
-    <a href="/chimney-lining/">Lining</a>
-    <a href="/chimney-caps/">Caps</a>
-    <a href="/masonry-repair/">Masonry</a>
-    <a href="/locations/">Locations</a>
+<section class="faq-section">
+  <div class="faq-inner">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item"><button class="faq-btn" aria-expanded="false">What is a chimney cap and why do I need one?<span class="faq-icon">+</span></button><div class="faq-body"><p>A chimney cap is a metal cover that fits over the flue opening. It keeps water, animals, leaves and debris from entering the flue.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" aria-expanded="false">What happens without a chimney cap?<span class="faq-icon">+</span></button><div class="faq-body"><p>Rain enters the flue, accelerating liner and masonry deterioration. Animals — birds, raccoons, squirrels — nest in uncapped flues. Both are preventable with a properly fitted cap.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" aria-expanded="false">How long do chimney caps last?<span class="faq-icon">+</span></button><div class="faq-body"><p>Stainless steel: 15–20+ years. Galvanized: 3–5 years. Copper: essentially lifetime.</p></div></div>
+    <div class="faq-item"><button class="faq-btn" aria-expanded="false">How much does a chimney cap cost?<span class="faq-icon">+</span></button><div class="faq-body"><p>$150–$700 installed depending on material, flue count and chimney access.</p></div></div>
+    
   </div>
-  <div class="legal"><a href="/terms/">Terms</a> &nbsp;|&nbsp; <a href="/privacy/">Privacy</a><br>© 2026 ChimneyServices.net — Licensed & Insured Nationwide</div>
+</section>
+
+<section class="cities-section">
+  <div class="cities-inner">
+    <h2>Service Locations</h2>
+    <p>We provide Chimney Cap Installation & Replacement in 40+ major US markets. Find your city:</p>
+    <div class="city-grid">
+      <a class="city-link" href="/locations/chicago-il/">Chicago, IL</a>
+      <a class="city-link" href="/locations/minneapolis-mn/">Minneapolis, MN</a>
+      <a class="city-link" href="/locations/denver-co/">Denver, CO</a>
+      <a class="city-link" href="/locations/boston-ma/">Boston, MA</a>
+      <a class="city-link" href="/locations/seattle-wa/">Seattle, WA</a>
+      <a class="city-link" href="/locations/dallas-tx/">Dallas, TX</a>
+      <a class="city-link" href="/locations/philadelphia-pa/">Philadelphia, PA</a>
+      <a class="city-link" href="/locations/atlanta-ga/">Atlanta, GA</a>
+      <a class="city-link" href="/locations/pittsburgh-pa/">Pittsburgh, PA</a>
+      <a class="city-link" href="/locations/nashville-tn/">Nashville, TN</a>
+      <a class="city-link" href="/locations/detroit-mi/">Detroit, MI</a>
+      <a class="city-link" href="/locations/new-york-city-ny/">New York City, NY</a>
+      <a class="city-link" href="/locations/">View All 42 Cities &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Ready to Schedule?</h2>
+  <p>Same-day appointments available nationwide. CSIA-certified technicians. Flat-rate pricing.</p>
+  <a class="btn" href="tel:+18558077707">&#128222; Call (855) 807-7707</a>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="flogo">&#x1F525; CHIMNEY<em>SERVICES</em>.NET</div>
+      <p>CSIA-certified chimney professionals serving 40+ US markets.</p>
+      <p class="nap">150 West 88th Street, Bloomington, MN 55420<br><a href="tel:+18558077707">(855) 807-7707</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="/chimney-cleaning/">Chimney Cleaning</a>
+      <a href="/chimney-inspection/">Chimney Inspection</a>
+      <a href="/chimney-repair/">Chimney Repair</a>
+      <a href="/chimney-lining/">Chimney Lining</a>
+      <a href="/chimney-caps/">Chimney Caps</a>
+      <a href="/masonry-repair/">Masonry Repair</a>
+    </div>
+    <div class="footer-col">
+      <h4>Top Cities</h4>
+      <a href="/locations/chicago-il/">Chicago, IL</a>
+      <a href="/locations/minneapolis-mn/">Minneapolis, MN</a>
+      <a href="/locations/denver-co/">Denver, CO</a>
+      <a href="/locations/boston-ma/">Boston, MA</a>
+      <a href="/locations/dallas-tx/">Dallas, TX</a>
+      <a href="/locations/">All Cities &rarr;</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/locations/">Service Areas</a>
+      <a href="/chimney-inspection/">Book Inspection</a>
+      <a href="/terms/">Terms &amp; Conditions</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 ChimneyServices.net &mdash; Licensed &amp; Insured Nationwide</span>
+    <span><a href="/terms/">Terms</a> &nbsp;&middot;&nbsp; <a href="/privacy/">Privacy</a></span>
+  </div>
 </footer>
-<nav class="tabbar" aria-label="Quick navigation">
+
+<nav class="tabbar">
   <a href="/"><svg viewBox="0 0 24 24"><path d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3z"/></svg>Home</a>
   <a href="/locations/"><svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/></svg>Locations</a>
   <a href="tel:+18558077707"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>Call</a>
   <a href="/chimney-inspection/"><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm12 8v9H5v-9h14z"/></svg>Schedule</a>
 </nav>
-<script>
-document.querySelectorAll('.faq-btn').forEach(b=>{
-  b.addEventListener('click',()=>{
-    const it=b.closest('.faq-item'),op=it.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-btn').setAttribute('aria-expanded','false');});
-    if(!op){it.classList.add('open');b.setAttribute('aria-expanded','true');}
-  });
-});
-</script>
+<script>document.querySelectorAll('.faq-btn').forEach(b=>{b.addEventListener('click',()=>{const it=b.closest('.faq-item'),op=it.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-btn').setAttribute('aria-expanded','false');});if(!op){it.classList.add('open');b.setAttribute('aria-expanded','true');}});});</script>
 </body>
 </html>
