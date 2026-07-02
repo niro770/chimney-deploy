@@ -12,6 +12,9 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://chimneyservices.net/img/chimney-services-og.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+<link rel="preload" as="image" href="/img/hero-828.webp" media="(max-width:899px)">
+<link rel="preload" as="image" href="/img/hero-1600.webp" media="(min-width:900px)">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +44,7 @@ nav.main-nav{background:#fff;border-bottom:2px solid var(--ember);padding:0 24px
 .nav-phone{font-family:'Oswald';font-weight:700;font-size:1.1rem;color:var(--ember)}
 
 /* ── Hero ── */
-.hero{background:linear-gradient(rgba(20,16,14,.65),rgba(20,16,14,.75)),url('https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=1600&auto=format&fit=crop') center/cover;color:#fff;text-align:center;padding:80px 24px 90px}
+.hero{background:linear-gradient(rgba(20,16,14,.65),rgba(20,16,14,.75)),url('/img/hero-828.webp') center/cover;color:#fff;text-align:center;padding:80px 24px 90px}
 .hero h1{font-size:clamp(2rem,5vw,3.4rem);margin-bottom:16px}
 .hero p{font-size:1.1rem;max-width:640px;margin:0 auto 32px;color:#f0ebe6;line-height:1.6}
 .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
@@ -54,7 +57,8 @@ nav.main-nav{background:#fff;border-bottom:2px solid var(--ember);padding:0 24px
 .hero-trust span{background:rgba(255,255,255,.12);color:#fff;border-radius:20px;padding:5px 14px;font-size:.85rem;font-weight:600}
 
 /* ── Page hero (interior) ── */
-.page-hero{background:linear-gradient(rgba(20,16,14,.78),rgba(20,16,14,.82)),url('https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=1600&auto=format&fit=crop') center/cover;color:#fff;text-align:center;padding:62px 24px}
+.page-hero{background:linear-gradient(rgba(20,16,14,.78),rgba(20,16,14,.82)),url('/img/hero-828.webp') center/cover;color:#fff;text-align:center;padding:62px 24px}
+@media(min-width:900px){.hero{background-image:linear-gradient(rgba(20,16,14,.65),rgba(20,16,14,.75)),url('/img/hero-1600.webp')}.page-hero{background-image:linear-gradient(rgba(20,16,14,.78),rgba(20,16,14,.82)),url('/img/hero-1600.webp')}}
 .page-hero h1{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:14px;max-width:880px;margin-left:auto;margin-right:auto}
 .page-hero p{color:#e6e0da;font-size:1.08rem;max-width:640px;margin:0 auto 26px;line-height:1.6}
 
@@ -62,7 +66,7 @@ nav.main-nav{background:#fff;border-bottom:2px solid var(--ember);padding:0 24px
 .stats{background:var(--ember);padding:20px 24px}
 .stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
 .stat-num{font-family:'Oswald';font-size:1.8rem;font-weight:700;color:#fff}
-.stat-lbl{font-size:.8rem;color:rgba(255,255,255,.8);margin-top:2px}
+.stat-lbl{font-size:.8rem;color:rgba(255,255,255,.95);margin-top:2px}
 
 /* ── Breadcrumb ── */
 .crumbs{max-width:1100px;margin:0 auto;padding:14px 24px 0;font-size:.84rem;color:var(--ash)}
@@ -152,7 +156,7 @@ nav.main-nav{background:#fff;border-bottom:2px solid var(--ember);padding:0 24px
 /* ── CTA ── */
 .cta-section{background:var(--ember);padding:64px 24px;text-align:center}
 .cta-section h2{font-size:clamp(1.6rem,3vw,2.4rem);color:#fff;margin-bottom:10px}
-.cta-section p{color:rgba(255,255,255,.85);margin-bottom:28px;font-size:1.05rem;max-width:520px;margin-left:auto;margin-right:auto}
+.cta-section p{color:rgba(255,255,255,.97);margin-bottom:28px;font-size:1.05rem;max-width:520px;margin-left:auto;margin-right:auto}
 .cta-section .btn{background:#fff;color:var(--ember);font-size:1.1rem;padding:1rem 2.5rem}
 .cta-section .btn:hover{background:var(--bone)}
 
@@ -164,11 +168,11 @@ footer{background:var(--charcoal);padding:48px 24px 28px;color:#cfcbc6}
 .footer-brand p{font-size:.88rem;color:#9b9690;line-height:1.6;margin-bottom:12px}
 .footer-brand .nap{font-size:.88rem;color:#e0dcdb}
 .footer-brand .nap a{color:#fff;font-weight:600}
-.footer-col h4{font-family:'Oswald';font-size:.95rem;color:#fff;margin-bottom:14px;text-transform:uppercase;letter-spacing:.04em}
+.footer-col .fh{font-family:'Oswald';font-weight:700;font-size:.95rem;color:#fff;margin-bottom:14px;text-transform:uppercase;letter-spacing:.04em}
 .footer-col a{display:block;color:#c0bbb6;font-size:.88rem;margin-bottom:8px}
 .footer-col a:hover{color:#fff}
-.footer-bottom{max-width:1100px;margin:0 auto;border-top:1px solid #4a4a4a;padding-top:18px;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:#6f6f6f;flex-wrap:wrap;gap:10px}
-.footer-bottom a{color:#9b9690}
+.footer-bottom{max-width:1100px;margin:0 auto;border-top:1px solid #4a4a4a;padding-top:18px;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:#a8a39d;flex-wrap:wrap;gap:10px}
+.footer-bottom a{color:#c0bbb6}
 
 /* ── Mobile tab bar ── */
 .tabbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:200;background:#fff;border-top:1px solid var(--line);box-shadow:0 -2px 12px rgba(0,0,0,.08);grid-template-columns:repeat(4,1fr);padding:8px 0 calc(8px + env(safe-area-inset-bottom))}
@@ -220,6 +224,7 @@ footer{background:var(--charcoal);padding:48px 24px 28px;color:#cfcbc6}
   <a class="nav-phone" href="tel:+18558077707">(855) 807-7707</a>
 </nav>
 
+<main>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "ChimneyServices.net - San Jose", "telephone": "+18558077707", "url": "https://chimneyservices.net/locations/san-jose-ca/", "image": "https://chimneyservices.net/img/chimney-services-og.jpg", "description": "CSIA-certified chimney cleaning, inspection, repair, lining, caps and masonry serving San Jose, California.", "areaServed": {"@type": "City", "name": "San Jose"}, "geo": {"@type": "GeoCoordinates", "latitude": "37.3012", "longitude": "-121.8480"}, "address": {"@type": "PostalAddress", "addressLocality": "San Jose", "addressRegion": "CA", "addressCountry": "US"}, "priceRange": "$$", "openingHours": "Mo-Su 00:00-23:59"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "serviceType": "Chimney Services", "name": "Chimney Services in San Jose", "provider": {"@type": "HomeAndConstructionBusiness", "name": "ChimneyServices.net", "telephone": "+18558077707"}, "areaServed": {"@type": "City", "name": "San Jose"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you offer chimney service in San Jose?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We provide CSIA-certified chimney cleaning, inspection, repair, lining, caps and masonry throughout San Jose, CA and the surrounding area, with same-day appointments available in most cases. Call (855) 807-7707."}}, {"@type": "Question", "name": "How much does chimney cleaning cost in San Jose?", "acceptedAnswer": {"@type": "Answer", "text": "A standard chimney cleaning with a Level 1 inspection in San Jose typically runs $100 to $300, depending on your chimney type, height and the level of buildup. You always get a firm price before any work begins."}}, {"@type": "Question", "name": "How often should I have my chimney cleaned in San Jose?", "acceptedAnswer": {"@type": "Answer", "text": "The NFPA recommends an annual inspection for every chimney, with cleaning once buildup reaches about 1/8 inch. Most San Jose homeowners who burn wood book a sweep once per heating season."}}, {"@type": "Question", "name": "What areas around San Jose do you serve?", "acceptedAnswer": {"@type": "Answer", "text": "Along with San Jose itself, we serve nearby communities including Alum Rock, East Foothills, Campbell, Los Gatos, Santa Clara. If you do not see your town, call (855) 807-7707 with your zip code and we will confirm coverage."}}]}</script>
@@ -298,6 +303,7 @@ footer{background:var(--charcoal);padding:48px 24px 28px;color:#cfcbc6}
 </section>
 
 <section class="faq-section"><div class="inner"><div class="section-hd"><h2>Chimney Service FAQs for San Jose</h2></div><div class="faq-grid"><div class="faq-item"><button class="faq-btn" aria-expanded="false">Do you offer chimney service in San Jose? <span class="faq-icon">+</span></button><div class="faq-body"><p>Yes. We provide CSIA-certified chimney cleaning, inspection, repair, lining, caps and masonry throughout San Jose, CA and the surrounding area, with same-day appointments available in most cases. Call (855) 807-7707.</p></div></div><div class="faq-item"><button class="faq-btn" aria-expanded="false">How much does chimney cleaning cost in San Jose? <span class="faq-icon">+</span></button><div class="faq-body"><p>A standard chimney cleaning with a Level 1 inspection in San Jose typically runs $100 to $300, depending on your chimney type, height and the level of buildup. You always get a firm price before any work begins.</p></div></div><div class="faq-item"><button class="faq-btn" aria-expanded="false">How often should I have my chimney cleaned in San Jose? <span class="faq-icon">+</span></button><div class="faq-body"><p>The NFPA recommends an annual inspection for every chimney, with cleaning once buildup reaches about 1/8 inch. Most San Jose homeowners who burn wood book a sweep once per heating season.</p></div></div><div class="faq-item"><button class="faq-btn" aria-expanded="false">What areas around San Jose do you serve? <span class="faq-icon">+</span></button><div class="faq-body"><p>Along with San Jose itself, we serve nearby communities including Alum Rock, East Foothills, Campbell, Los Gatos, Santa Clara. If you do not see your town, call (855) 807-7707 with your zip code and we will confirm coverage.</p></div></div></div></div></section>
+</main>
 
 <footer>
   <div class="footer-inner">
@@ -307,7 +313,7 @@ footer{background:var(--charcoal);padding:48px 24px 28px;color:#cfcbc6}
       <p class="nap">150 West 88th Street<br>Bloomington, MN 55420<br><a href="tel:+18558077707">(855) 807-7707</a><br>info@chimneyservices.net</p>
     </div>
     <div class="footer-col">
-      <h4>Services</h4>
+      <p class="fh">Services</p>
       <a href="/chimney-cleaning/">Chimney Cleaning</a>
       <a href="/chimney-inspection/">Chimney Inspection</a>
       <a href="/chimney-repair/">Chimney Repair</a>
@@ -316,7 +322,7 @@ footer{background:var(--charcoal);padding:48px 24px 28px;color:#cfcbc6}
       <a href="/masonry-repair/">Masonry Repair</a>
     </div>
     <div class="footer-col">
-      <h4>Resources</h4>
+      <p class="fh">Resources</p>
       <a href="/guide/">Chimney Care Guide</a>
       <a href="/fireplaces/">Fireplace Guide</a>
       <a href="/chimney-inspection/">Book Inspection</a>
@@ -326,7 +332,7 @@ footer{background:var(--charcoal);padding:48px 24px 28px;color:#cfcbc6}
       <a href="/sitemap.xml">Sitemap</a>
     </div>
     <div class="footer-col">
-      <h4>Top Cities</h4>
+      <p class="fh">Top Cities</p>
       <a href="/locations/chicago-il/">Chicago, IL</a>
       <a href="/locations/minneapolis-mn/">Minneapolis, MN</a>
       <a href="/locations/denver-co/">Denver, CO</a>
@@ -348,14 +354,6 @@ footer{background:var(--charcoal);padding:48px 24px 28px;color:#cfcbc6}
   <a href="/chimney-inspection/"><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm12 8v9H5v-9h14z"/></svg>Schedule</a>
 </nav>
 
-<script>
-document.querySelectorAll('.faq-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const item=btn.closest('.faq-item'),isOpen=item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-btn').setAttribute('aria-expanded','false');});
-    if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');}
-  });
-});
-</script>
+<script src="/js/faq.js" defer></script>
 </body>
 </html>
